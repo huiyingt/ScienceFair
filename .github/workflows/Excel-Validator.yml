@@ -3,7 +3,7 @@ name: Excel File Validator
 on:
   push:
     paths:
-      - science_fair.xlsx
+      - SchoolScienceFair.xlsx
 
 jobs:
   validate_excel:
@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set Up Java
-        uses: actions/setup-java@v3
+        uses: actions/setup-java@v4
         with:
           distribution: 'zulu'
           java-version: '17'
