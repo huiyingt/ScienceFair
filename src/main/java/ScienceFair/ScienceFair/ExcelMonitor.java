@@ -14,7 +14,7 @@ public class ExcelMonitor {
 
 	public static void main(String[] args) {
 		// Path must be a string literal
-		File file = new File("C:\\Users\\aidan\\OneDrive\\Documents\\Full Stack Development\\VLC-SCFSF18-DevOps\\27Oct2025\\ScienceFair\\src\\main\\java\\SchoolScienceFair.xlsx");
+		File file = new File("ScienceFair/src/main/java/ScienceFair/ScienceFair/SchoolScienceFair.xlsx");
 		
 		try (FileInputStream fis = new FileInputStream(file);
 				Workbook workbook = new XSSFWorkbook(fis)) {
